@@ -1,7 +1,11 @@
-<title>calculadora de gorjeta</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de gorjeta</title>
 </head>
 <body>
-    <h1>calculadoira de gorjeta</h1>
     <header><img src="./images/logo.svg" alt=""></header>
     <main>
         <section class="informacoes">
@@ -11,30 +15,50 @@
                     <div>
                         <img src="./images/icon-dollar.svg" alt="icone de cifrao">
                         <input type="number" name="conta" id="conta">
+                        <input type="number" name="conta" id="conta" placeholder="0">
 
                     </div>
                 </div>
-                <div class="gorjeta">
-                    <label for="outra">Selecione a gorjeta %</label>
-
-                    <div>
-                        <input type="button" value="5%">
-                        <input type="button" value="10%" >
+@@ -27,18 +27,38 @@
                         <input type="button" value="15%">
                         <input type="button" value="25%">
                         <input type="button" value="50%">
                         <input type="number" name="outra" id="outra">
+                        <input type="number" name="outra" id="Outra" placeholder="0">
                     </div>
                 </div>
 
                 <div class="pessoas">
                     <label for="conta">quantidade de pessoas</label>
+                    <label for="pessoas">quantidade de pessoas</label>
+                    <p>Não pode ser 0</p>
                     <div>
                         <img src="./images/icon-dollar.svg" alt="icone de cifrao">
                         <input type="number" name="conta" id="conta">
+                        <img src="./images/icon-person.svg" alt="icone da pessoa">
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
                 </div>
             </form>
         </section>
+        <section class="resultados"></section>
+        <div class="gorjeta-total">
+
+            <p>
+                <strong>Gorjeta</strong> <br>
+                /pessoa
+            </p>
+            <strong>$0.00</strong>
+        </div>
+
+        <div class="total">
+
+            <p>
+                <strong>Total</strong> <br>
+                /pessoa
+            </p>
+            <strong>$0.00</strong>
+        </div>
+        
     </main>
 </body>
 </html>
