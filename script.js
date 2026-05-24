@@ -116,3 +116,9 @@ function limpar() {
     document.querySelector(".pessoas .input-box").setAttribute("id", "")
 }
 
+    document.querySelector(".pessoas #erro").style.display = "none"
+    document.querySelector(".pessoas .input-box").setAttribute("id", "")
+ 
+    conta = 0
+   pessoas = 0
+   porcentagem = 0
