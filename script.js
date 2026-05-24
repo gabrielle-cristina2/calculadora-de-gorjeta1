@@ -42,5 +42,6 @@ botoesGorjeta.forEach(botao => {
 
    porcentagem = parseFloat(evento.target.value) /100
 
-   console.log(porcentagem)
+
 }
+const gorjetaInput = document.querySelector("#outra")
