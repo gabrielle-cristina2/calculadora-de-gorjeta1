@@ -1,7 +1,6 @@
 let conta = 0
 let pessoas = 0
 let porcentagem = 0
-
 const contaInput = document.querySelector("#conta")
 contaInput.addEventListener("input", receberValorConta)
 
@@ -14,14 +13,14 @@ const pessoasInput = document.querySelector("#pessoas")
 pessoasInput.addEventListener("input", receberQuantidadesPessoas)
 
 function receberQuantidadesPessoas(event) {
-        const paragrafoErro = document.querySelector(".pessoas #erro")
+       const paragrafoErro = document.querySelector(".pessoas #erro")
     const divErro = document.querySelector(".pessoas .input-box")
-       if (event.target.value === "") {
+        if (event.target.value === "") {
         paragrafoErro.style.display = "block"
         divErro.setAttribute("id", "erro-div")
         pessoas = 0
     } else {
-        if (event.target.value === "0") {
+                if (event.target.value === "0") {
             paragrafoErro.style.display = "block"
             divErro.setAttribute("id", "erro-div")
             pessoas = 0
@@ -44,8 +43,8 @@ function receberPorcentagem(evento) {
         botoesGorjeta.forEach(botao => botao.classList.remove("botao-ativo"))
 
     evento.target.classList.add("botao-ativo")
-    document.querySelector("#Outra").value = ""
-        porcentagem = parseFloat(evento.target.value) / 100
+       document.querySelector("#Outra").value = ""
+           porcentagem = parseFloat(evento.target.value) / 100
     calcular()
 }
 
@@ -115,10 +114,3 @@ function limpar() {
     document.querySelector(".pessoas #erro").style.display = "none"
     document.querySelector(".pessoas .input-box").setAttribute("id", "")
 }
-
-    document.querySelector(".pessoas #erro").style.display = "none"
-    document.querySelector(".pessoas .input-box").setAttribute("id", "")
- 
-    conta = 0
-   pessoas = 0
-   porcentagem = 0
